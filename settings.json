@@ -1,0 +1,9 @@
+{
+    "public": {
+        "api": {
+            "username": "mimosa123",
+            "password": "mimosa123",
+            "interval": 5000
+        }
+    }
+}
