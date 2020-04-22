@@ -1,0 +1,22 @@
+{
+  "name": "mimosa-vue",
+  "private": true,
+  "scripts": {
+    "start": "NO_HMR=1 meteor",
+    "test": "NO_HMR=1 meteor test --once --raw-logs --driver-package meteortesting:mocha",
+    "test-app": "NO_HMR=1 TEST_WATCH=1 meteor test --full-app --raw-logs --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.3",
+    "jquery": "^3.4.1",
+    "meteor-node-stubs": "^1.0.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
